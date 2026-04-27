@@ -48,16 +48,13 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit" className="btn-primary btn-block" disabled={loading}>
+          <button type="submit" className="btn-primary btn-block btn-wide" disabled={loading}>
             {loading ? 'Signing in...' : 'Sign in'}
           </button>
         </form>
         <p className="auth-footer">
           New to KartIQ? <Link to="/register">Create an account</Link>
         </p>
-        <div className="auth-hint">
-          <strong>Demo admin:</strong> admin@kartiq.com / admin123
-        </div>
       </div>
     </div>
   );
